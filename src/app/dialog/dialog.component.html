@@ -1,0 +1,24 @@
+<div class="container">
+        <div class="left">
+            <div class="top">
+                <h1 mat-dialog-title class="title">{{card_data.Title|uppercase}} ({{card_data.Year}})</h1>
+                <mat-dialog-content>
+                    <div class="info">
+                        <h3 *ngIf="card_data.Genre != undefined">GENRE: {{card_data.Genre}}</h3>
+                        <h3 *ngIf="card_data.Director != undefined">DIRECTOR: {{card_data.Director}}</h3>
+                        <h3 *ngIf="card_data.Actors != undefined">CAST: {{card_data.Actors}}</h3>
+                        <h3 *ngIf="card_data.Rating != undefined"> RATING: {{card_data.Rating}}</h3>
+                        <h3 *ngIf="card_data.Metascore != undefined">METASCORE: {{card_data.Metascore}}%</h3>
+                        <h3 *ngIf="card_data.Description != undefined">PLOT: {{card_data.Description}}</h3>
+                    </div>
+                </mat-dialog-content>
+            </div>
+            <div class="bottom">
+                <youtube-player class="vplayer" videoId="{{card_data.vlink}}" [width]="400" [height]="300"></youtube-player>
+                <a mat-button [mat-dialog-close]="true" routerLink="/movies/trailer/{{card_data.vlink}}" id="trailer">WATCH TRAILER</a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="{{card_data.plink}}" alt="Poster">
+        </div>
+</div>

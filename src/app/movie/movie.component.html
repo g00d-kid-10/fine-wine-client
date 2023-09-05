@@ -1,0 +1,15 @@
+<app-toolbar></app-toolbar>
+<div class="container">
+    <div class="banner">
+        <div class="welcome">Welcome!</div>
+        <div class="quote_container">
+            <div class="quote">WHEN CINEMA MATURED LIKE A FINE-WINE</div>
+            <div class="quote2">Watch Trailer & Revisit These Classics.</div>
+        </div>
+    </div>
+    <div class="track">
+        <div *ngFor="let movie of movies">
+            <app-card [item]="movie"></app-card>
+        </div>
+    </div>
+</div>

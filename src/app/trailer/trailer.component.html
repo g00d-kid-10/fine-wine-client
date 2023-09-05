@@ -1,0 +1,10 @@
+<app-toolbar></app-toolbar>
+<div class="container">
+    <div *ngIf="w>=1024; else elseBlock" class="vplayer"><youtube-player [videoId]="videoId" [width]="1280" [height]="720" ></youtube-player></div>
+    <ng-template #elseBlock>
+        <div *ngIf="w>=820; else elseBlock" class="vplayer"><youtube-player [videoId]="videoId" [width]="800" [height]="600" ></youtube-player></div>
+        <ng-template #elseBlock>
+            <div class="vplayer"><youtube-player [videoId]="videoId" [width]="375" [height]="300" ></youtube-player></div>
+        </ng-template>
+    </ng-template>
+</div>

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body { 
+        height: max-content;
+        min-width: 100%;
+        max-width: max-content;
+    }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    max-height: max-content;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: linear-gradient(#072152, #280a33);
+    background-repeat: no-repeat;
+}
