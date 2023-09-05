@@ -14,4 +14,4 @@ Server-Side Source Code: `https://github.com/g00d-kid-10/fine-wine-server.git`
 
 3. Run: `ng serve`
 
-4. Visit for Movies http://localhost:4200/
+4. Visit for Website http://localhost:4200/
